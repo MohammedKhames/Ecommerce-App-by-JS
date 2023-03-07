@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;500&display=swap" rel="stylesheet">
+    <title>Shopping Cart | Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/createProduct.css">
+    <link rel="stylesheet" href="css/style-rtl.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+          <div class="header-content">
+
+                  <a href="index.html" class="brand"> Shopping Cart</a>
+                  <nav>
+                    <ul id="links">
+                        <li><a href="login.html"> Sign In</a></li>
+                        <li><a href="register.html"> Sign Up</a></li>
+                    </ul>
+
+                    <ul id="user-info" class="link-group">
+                      <li id="en-lang">EN</li>
+                        <li id="ar-lang">AR</li>
+                      <li><a href="favorites.html" id="favorites">Favorites</a></li>
+                      <li><a href="myProducts.html">My Products</a></li>
+
+                      <li><a href="profile.html" id="user"></a></li>
+                      <li><a href="register.html" id="logout"> Logout</a></li>
+
+                      <li class="shopping-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                          <span class="badge"></span>
+
+                          <div class="carts-products">
+                              <div></div>
+                              <a href="cartProducts.html">View Your Cart</a>
+                          </div>
+                      </li>
+
+                    </ul>
+
+                </nav>
+
+          </div>
+         </div>
+       </header>
+
+    <section class="create-product-page">
+
+      <div class="container">
+        <form id="create-form">
+            <input type="file" id="upload-image-file">
+            <input type="text" placeholder="Name..." id="product-name">
+            <input type="text" placeholder="Description..." id="product-desc">
+            <select name="" id="product-size">
+                <option value="" hidden>Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <input type="submit" value="Create Product" id="product-create-btn">
+
+        </form>
+      </div>
+
+
+    </section>
+
+
+
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/createProduct.js"></script>
+    <script src="js/changeDir.js"></script>
+
+
+</body>
+</html>
